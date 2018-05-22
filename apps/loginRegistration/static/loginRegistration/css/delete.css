@@ -1,0 +1,15 @@
+/*CSS reset settings here*/
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+.sure{
+    width: 800px;
+    display: inline-block;
+    background-color: lightgray;
+    border: 2px solid black;
+}
+
+

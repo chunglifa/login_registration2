@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    {% load static %}
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="{% static 'loginRegistration/css/success.css' %}">
+
+</head>
+<body>
+    <h1>Success! Welcome {{user.f_name}}</h1>
+    {% if messages %}
+    {% for message in messages %}
+        <p>{{ message }}</p>
+    {% endfor %}
+    {% endif %}
+
+    <a href="url">Edit</a> <a href="/users/{{user.id}}/destroy">Delete</a>
+</body>
+</html>
